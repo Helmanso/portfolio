@@ -1,6 +1,5 @@
 import { motion, useAnimation, useTime } from "framer-motion"
 import { useEffect, useState } from "react"
-import AutoTyping, { BlinkCursor } from 'react-auto-typing'
 
 
 

@@ -100,8 +100,8 @@ const Navbar  = () => {
             <motion.div onClick={() => setDrop(!drop)} className={`${drop ? 'block' : 'hidden'} absolute top-10 bg-kali-200 pr-32 pl-10 py-4 left-0 z-50 rounded flex justify-between `}>
                 <motion.ul>
                     {sections.map((section, index) => (
-                        <motion.div className={`flex items-center gap-2 pr-32 pl-2 rounded  hover:bg-kali-100 cursor-pointer`}>
-                            <motion.img src={section.icon} className='h-5'/>
+                        <motion.div key={index} className={`flex items-center gap-2 pr-32 pl-2 rounded  hover:bg-kali-100 cursor-pointer`}>
+                            <motion.img  src={section.icon} className='h-5'/>
                             <motion.li className='py-2'>{section.name}</motion.li>
 
                         </motion.div>
@@ -112,7 +112,7 @@ const Navbar  = () => {
                 <motion.div className='h-[500px] w-[1px] bg-black rounded ml-20'></motion.div>
                 <motion.ul className='ml-8'>
                     {content.map((section, index) => (
-                        <motion.div className='flex items-center gap-2  pr-32 pl-2 rounded  hover:bg-kali-100 cursor-pointer'>
+                        <motion.div key={index} className='flex items-center gap-2  pr-32 pl-2 rounded  hover:bg-kali-100 cursor-pointer'>
                             <motion.img src={section.icon} className='h-5'/>
                             <motion.li className='py-2'>{section.name}</motion.li>
                         </motion.div>
