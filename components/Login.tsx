@@ -33,7 +33,7 @@ const Login = () => {
     return (
         <motion.div className='w-full h-screen'>
             <NavBar />
-<motion.div className='bg-[url("../public/login.png")] h-full  bg-contain bg-no-repeat'>
+<motion.div className='bg-[url("../public/login.png")] h-full w-full  bg-contain bg-no-repeat'>
             <motion.div className='flex justify-center items-center h-full'>
                 <motion.div className='flex flex-col gap-2 bg-kali-100 opacity-[0.9] rounded-lg '>
                     <motion.div className='flex gap-8 items-center px-8 pt-8 '>
